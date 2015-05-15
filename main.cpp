@@ -20,7 +20,8 @@
 	    TDAList* listall = new LinkedList();
 	    TDAList* listafsc = new fscursorlist();
 	    Integer* intTemp;
-	    int val, pos;
+	    int pos;
+	    srand (time(0));
 	    bool flag = true;
 	    while (flag)
 	    {
@@ -29,58 +30,121 @@
 	           case 1: // Fsarraylist 
 	               	switch(menu()){
 	           				case 1: // Insert Fsarraylist
-	               
+	               					for (int i = 0; i < 1000; ++i)
+	               					{
+	               						
+	               						do{
+	               							x=rand%()1000;
+	               						}while (pos>listafsa);
+	               					}
 	              				 break;
 	           				case 2: // remove Fsarraylist
-	              
+	              					for (int i = 0; i < 1000; ++i)
+	               					{
+	               						do{
+	               							x=rand%()1000;
+	               						}while (pos>listafsa);
+	               					}
 	               				break;
 	           				case 3:// get Fsarraylist
-	               
+	               					for (int i = 0; i < 1000; ++i)
+	               					{
+	               						do{
+	               							x=rand%()1000;
+	               						}while (pos>listafsa);
+	               					}
 	               				break;
 	           				case 4: // IndexOf Fsarraylist
-	                
+	                				for (int i = 0; i < 1000; ++i)
+	               					{
+	               						do{
+	               							x=rand%()1000;
+	               						}while (pos>listafsa);
+	               					}
 	               				break;
 	           				case 5: //fisrt Fsarraylist
-	               
+	               					
 	              				 break;
 	           				case 6: // last Fsarraylist
+	           						
 	           					break;    
 	        		}
 	               break;
 	           case 2: // Linkedlist
 	              	switch(menu2()){
 	           				case 1: // Insert Linkedlist
-	               
+	               					for (int i = 0; i < 1000; ++i)
+	               					{
+	               						do{
+	               							x=rand%()1000;
+	               						}while (pos>listall);
+	               					}
 	              				 break;
 	           				case 2: // remove Linkedlist
-	              
+	              					for (int i = 0; i < 1000; ++i)
+	               					{
+	               						do{
+	               							x=rand%()1000;
+	               						}while (pos>listall);
+	               					}
 	               				break;
 	          				 case 3:// get Linkedlist
-	               
+	               					for (int i = 0; i < 1000; ++i)
+	               					{
+	               						do{
+	               							x=rand%()1000;
+	               						}while (pos>listall);
+	               					}
 	               				break;
 	           				case 4: // IndexOf Linkedlist
-	                
+	                				for (int i = 0; i < 1000; ++i)
+	               					{
+	               						do{
+	               							x=rand%()1000;
+	               						}while (pos>listall);
+	               					}
 	              				 break;
 	           				case 5: //fisrt Linkedlist
-	               
+	               					
 	               				break;
 	           				case 6: // last Linkedlist
+	           						
 	           					break;    
 	       			 }
 	               	break;
 	           case 3:// fscursorlist
 	            	switch(menu2()) {
 	           				case 1: // Insert fscursorlist
-	               
+	               					for (int i = 0; i < 1000; ++i)
+	               					{
+	               						do{
+	               							x=rand%()1000;
+	               						}while (pos>listafsc);
+	               					}
 	               				break;
 	           				case 2: // remove fscursorlist
-	              
+	              					for (int i = 0; i < 1000; ++i)
+	               					{
+	               						do{
+	               							x=rand%()1000;
+	               						}while (pos>listafsc);
+	               					}
 	               				break;
 	           				case 3:// get fscursorlist
-	               
+	               					for (int i = 0; i < 1000; ++i)
+	               					{
+	               						do{
+	               							x=rand%()1000;
+	               						}while (pos>listafsc);
+	               					}
 	               				break;
 	          				 case 4: // IndexOf fscursorlist
-	               
+	               					for (int i = 0; i < 1000; ++i)
+	               					{
+	               						do{
+	               							x=rand%()1000;
+	               						}while (pos>listafsc);
+	               					}
 	               				break;
 	           				case 5: //fisrt fscursorlist
 	               
