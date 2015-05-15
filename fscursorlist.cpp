@@ -23,16 +23,11 @@ bool FSCursorList::insert(Object* elem, int pos){
 	if(size == capacity)
 		return false;
 	int neo = next.avail();
-	if (p == 0 && head == -1){
+	if (head == -1){
 		head = neo;
 		rows[head].prev = -1;
 		rows[head].next = -1;
 		rows[head].data = elem;
-	}else(pos == 0 && head != -1){
-		rows[neo].prev = -1;
-		rows[neo].next = head;
-		rows[head].prev = neo;
-		head = neo;
 	}else{
 		int temp = head;
 		for (int i = 0; i < pos -1; ++i)
@@ -42,15 +37,28 @@ bool FSCursorList::insert(Object* elem, int pos){
 		rows[neo].prev = temp;
 		rows[neo].next = rows[temp].next;
 		rows[temp].next = neo;
-		if(p < size)
+		if(pos < size)
 			rows[rows[neo].next].prev = neo;
 	}
 }
 int FSCursorList::indexOf(Object* elem)const{
-
+	for (int i = 0; i < size; ++i)
+	{
+		if (rows[elem].data == rows[i].data)
+		{
+			return i;
+		}
+	}
+	return -1;
 }
 Object* FSCursorList::get(unsigned index)const{
-
+	for (int i = 0; i < size; ++i)
+	{
+		if(rows[i].data == rows[index].data){
+			return rows[index].data;
+		}
+	}
+	return NULL;
 }
 bool FSCursorList::erase(unsigned pos){
 	if(head == -1)
