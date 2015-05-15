@@ -64,7 +64,7 @@ bool FSCursorList::erase(unsigned pos){
 	if(head == -1)
 		return false;
 	if (pos < 0 || pos > size)
-		return false
+		return false;
 	if (pos == size){
 		int temp = head;
 		for (int i = 0; i < pos -1; ++i)
