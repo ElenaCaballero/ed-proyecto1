@@ -62,26 +62,24 @@ Object* FSCursorList::get(unsigned index)const{
 }
 bool FSCursorList::erase(unsigned pos){
 	if(head == -1)
-		return NULL;
-	int old = head;
-	if (pos == 0){
-		int temp = old;
-		for (int i = 0; i < pos+1; ++i)
+		return false;
+	if (pos < 0 || pos > size)
+		return false
+	if (pos == size){
+		int temp = head;
+		for (int i = 0; i < pos -1; ++i)
 		{
 			temp = rows[temp].next;
 		}
-		rows[temp].prev = rows[old].prev;
-		delete rows[old];
+		rows[rows[temp].prev].next = -1;
 	}else{
-		int temp = old;
-		for (int i = 0; i < pos-1; ++i)
+		int temp = head;
+		for (int i = 0; i < pos; ++i)
 		{
-			temp = rows[temp].next;
+			temp = rows[head].next;
 		}
-		rows[temp].next = rows[old].next;
-		if(pos == size)
-			rows[rows[old].next].prev = rows[old].prev;
-		delete rows[old];
+		rows[rows[temp].prev].next = rows[temp].prev;
+		rows[rows[temp].next].prev = rows[temp].next;
 	}
 }
 int FSCursorList::prev(int pos) const{
