@@ -1,7 +1,7 @@
 #include <iostream>
 #include "object.h"
 #include "tdalist.h"
-#include "fscursoslist.h"
+#include "fscursorlist.h"
 // Para tener la definición del NULL sin declarar más identificadores
 // innecesarios
 #include <stddef.h>
