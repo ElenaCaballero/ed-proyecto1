@@ -55,15 +55,17 @@ int FSArrayList::indexOf(Object* other)const{
 			return i;
 		}
 	}
+	return -1;
 }
 // Consigue el elemento index de la lista, si index es una posición válida
 Object* FSArrayList::get(unsigned index)const{
-	if (index < 0 || index > size)
+	if (index > size)
 		return NULL;
+	return data[index];
 }
 //Elimina el elemento en la posición dada
 bool FSArrayList::erase(unsigned pos){
-	if (pos < 0 || pos >= size)
+	if (pos >= size)
 	{
 		return false;
 	}
