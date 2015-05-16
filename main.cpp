@@ -89,9 +89,16 @@
 	               					}
 	               				break;
 	           				case 5: //fisrt Fsarraylist
-	               					
+	               					for (int i = 0; i < 1000; ++i)
+	               					{
+	               						val=listafsa->fisrt();
+	               					}
 	              				 break;
 	           				case 6: // last Fsarraylist
+	           						for (int i = 0; i < 1000; ++i)
+	               					{
+	               						val=listafsa->last();
+	               					}
 	           						
 	           					break;    
 	        		}
@@ -153,10 +160,16 @@
 	               					}
 	              				 break;
 	           				case 5: //fisrt Linkedlist
-	               					
+	               					for (int i = 0; i < 1000; ++i)
+	               					{
+	               						val=listall->fisrt();
+	               					}
 	               				break;
 	           				case 6: // last Linkedlist
-	           						
+	           						for (int i = 0; i < 1000; ++i)
+	               					{
+	               						val=listall->last();
+	               					}
 	           					break;    
 	       			 }
 	               	break;
@@ -218,9 +231,16 @@
 	               					}
 	               				break;
 	           				case 5: //fisrt fscursorlist
-	               
+	               					for (int i = 0; i < 1000; ++i)
+	               					{
+	               						val=listafsc->fisrt();
+	               					}
 	              				 break;
 	           				case 6: // last fscursorlist
+	           						for (int i = 0; i < 1000; ++i)
+	               					{
+	               						val=listafsc->last();
+	               					}
 	           					break;    
 	        		}
 	               
