@@ -82,7 +82,7 @@
 	               						}while (ran>listafsa->getSize());
 	               						intTemp = new Integer(i);
 	               						t = clock() - t;
-	               						pos=listafsa->IndexOf(intTemp);
+	               						pos=listafsa->indexOf(intTemp);
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
 										delete intTemp;
@@ -91,7 +91,7 @@
 	           				case 5: //fisrt Fsarraylist
 	               					for (int i = 0; i < 1000; ++i)
 	               					{
-	               						val=listafsa->fisrt();
+	               						val=listafsa->first();
 	               					}
 	              				 break;
 	           				case 6: // last Fsarraylist
@@ -153,7 +153,7 @@
 	               						}while (ran>listall->getSize());
 	               						intTemp = new Integer(i);
 	               						t = clock() - t;
-	               						pos=listall->IndexOf(intTemp);
+	               						pos=listall->indexOf(intTemp);
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
 										delete intTemp;
@@ -162,7 +162,7 @@
 	           				case 5: //fisrt Linkedlist
 	               					for (int i = 0; i < 1000; ++i)
 	               					{
-	               						val=listall->fisrt();
+	               						val=listall->first();
 	               					}
 	               				break;
 	           				case 6: // last Linkedlist
@@ -224,7 +224,7 @@
 	               						}while (ran>listafsc->getSize());
 	               						intTemp = new Integer(i);
 	               						t = clock() - t;
-	               						pos=listafsc->IndexOf(intTemp);
+	               						pos=listafsc->indexOf(intTemp);
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
 										delete intTemp;
@@ -233,7 +233,7 @@
 	           				case 5: //fisrt fscursorlist
 	               					for (int i = 0; i < 1000; ++i)
 	               					{
-	               						val=listafsc->fisrt();
+	               						val=listafsc->first();
 	               					}
 	              				 break;
 	           				case 6: // last fscursorlist
