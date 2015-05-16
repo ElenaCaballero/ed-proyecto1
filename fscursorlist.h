@@ -1,5 +1,5 @@
-#ifndef FSCURSOSLIST_H
-#define FSCURSOSLIST_H 
+#ifndef FSCURSORLIST_H
+#define FSCURSORLIST_H 
 #include "object.h"
 #include "tdalist.h"
 

@@ -39,7 +39,7 @@
 	               						t = clock();
 	               						do{
 	               							x=rand()%1000;
-	               						}while (pos>listafsa->size());
+	               						}while (pos>listafsa->getSize());
 	               						t = clock() - t;
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
@@ -51,7 +51,7 @@
 	               						t = clock();
 	               						do{
 	               							x=rand()%1000;
-	               						}while (pos>listafsa->size());
+	               						}while (pos>listafsa->getSize());
 	               						t = clock() - t;
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
@@ -63,7 +63,7 @@
 	               						t = clock();
 	               						do{
 	               							x=rand()%1000;
-	               						}while (pos>listafsa->size());
+	               						}while (pos>listafsa->getSize());
 	               						t = clock() - t;
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
@@ -75,7 +75,7 @@
 	               						t = clock();
 	               						do{
 	               							x=rand()%1000;
-	               						}while (pos>listafsa->size());
+	               						}while (pos>listafsa->getSize());
 	               						t = clock() - t;
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
@@ -97,7 +97,7 @@
 	               						t = clock();
 	               						do{
 	               							x=rand()%1000;
-	               						}while (pos>listall->size());
+	               						}while (pos>listall->getSize());
 	               						t = clock() - t;
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
@@ -109,7 +109,7 @@
 	               						t = clock();
 	               						do{
 	               							x=rand()%1000;
-	               						}while (pos>listall->size());
+	               						}while (pos>listall->getSize());
 	               						t = clock() - t;
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
@@ -121,7 +121,7 @@
 	               						t = clock();
 	               						do{
 	               							x=rand()%1000;
-	               						}while (pos>listall->size());
+	               						}while (pos>listall->getSize());
 	               						t = clock() - t;
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
@@ -133,7 +133,7 @@
 	               						t = clock();
 	               						do{
 	               							x=rand()%1000;
-	               						}while (pos>listall->size());
+	               						}while (pos>listall->getSize());
 	               						t = clock() - t;
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
@@ -155,7 +155,7 @@
 	               						t = clock();
 	               						do{
 	               							x=rand()%1000;
-	               						}while (pos>listafsc->size());
+	               						}while (pos>listafsc->getSize());
 	               						t = clock() - t;
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
@@ -167,7 +167,7 @@
 	               						t = clock();
 	               						do{
 	               							x=rand()%1000;
-	               						}while (pos>listafsc->size());
+	               						}while (pos>listafsc->getSize());
 	               						t = clock() - t;
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
@@ -180,7 +180,7 @@
 	               						t = clock();
 	               						do{
 	               							x=rand()%1000;
-	               						}while (pos>listafsc->size());
+	               						}while (pos>listafsc->getSize());
 	               						t = clock() - t;
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
@@ -192,7 +192,7 @@
 	               						t = clock();
 	               						do{
 	               							x=rand()%1000;
-	               						}while (pos>listafsc->size());
+	               						}while (pos>listafsc->getSize());
 	               						t = clock() - t;
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
