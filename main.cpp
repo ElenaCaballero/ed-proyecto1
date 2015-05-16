@@ -20,6 +20,7 @@
 	    TDAList* listall = new LinkedList();
 	    TDAList* listafsc = new fscursorlist();
 	    Integer* intTemp;
+	    clock t;
 	    int pos;
 	    srand (time(0));
 	    bool flag = true;
@@ -32,34 +33,49 @@
 	           				case 1: // Insert Fsarraylist
 	               					for (int i = 0; i < 1000; ++i)
 	               					{
-	               						
+	               						t = clock();
 	               						do{
 	               							x=rand%()1000;
 	               						}while (pos>listafsa);
+	               						t = clock() - t;
+  										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
+										cout<<endl;
 	               					}
 	              				 break;
 	           				case 2: // remove Fsarraylist
 	              					for (int i = 0; i < 1000; ++i)
 	               					{
+	               						t = clock();
 	               						do{
 	               							x=rand%()1000;
 	               						}while (pos>listafsa);
+	               						t = clock() - t;
+  										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
+										cout<<endl;
 	               					}
 	               				break;
 	           				case 3:// get Fsarraylist
 	               					for (int i = 0; i < 1000; ++i)
 	               					{
+	               						t = clock();
 	               						do{
 	               							x=rand%()1000;
 	               						}while (pos>listafsa);
+	               						t = clock() - t;
+  										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
+										cout<<endl;
 	               					}
 	               				break;
 	           				case 4: // IndexOf Fsarraylist
 	                				for (int i = 0; i < 1000; ++i)
 	               					{
+	               						t = clock();
 	               						do{
 	               							x=rand%()1000;
 	               						}while (pos>listafsa);
+	               						t = clock() - t;
+  										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
+										cout<<endl;
 	               					}
 	               				break;
 	           				case 5: //fisrt Fsarraylist
@@ -75,33 +91,49 @@
 	           				case 1: // Insert Linkedlist
 	               					for (int i = 0; i < 1000; ++i)
 	               					{
+	               						t = clock();
 	               						do{
 	               							x=rand%()1000;
 	               						}while (pos>listall);
+	               						t = clock() - t;
+  										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
+										cout<<endl;
 	               					}
 	              				 break;
 	           				case 2: // remove Linkedlist
 	              					for (int i = 0; i < 1000; ++i)
 	               					{
+	               						t = clock();
 	               						do{
 	               							x=rand%()1000;
 	               						}while (pos>listall);
+	               						t = clock() - t;
+  										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
+										cout<<endl;
 	               					}
 	               				break;
 	          				 case 3:// get Linkedlist
 	               					for (int i = 0; i < 1000; ++i)
 	               					{
+	               						t = clock();
 	               						do{
 	               							x=rand%()1000;
 	               						}while (pos>listall);
+	               						t = clock() - t;
+  										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
+										cout<<endl;
 	               					}
 	               				break;
 	           				case 4: // IndexOf Linkedlist
 	                				for (int i = 0; i < 1000; ++i)
 	               					{
+	               						t = clock();
 	               						do{
 	               							x=rand%()1000;
 	               						}while (pos>listall);
+	               						t = clock() - t;
+  										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
+										cout<<endl;
 	               					}
 	              				 break;
 	           				case 5: //fisrt Linkedlist
@@ -117,33 +149,50 @@
 	           				case 1: // Insert fscursorlist
 	               					for (int i = 0; i < 1000; ++i)
 	               					{
+	               						t = clock();
 	               						do{
 	               							x=rand%()1000;
 	               						}while (pos>listafsc);
+	               						t = clock() - t;
+  										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
+										cout<<endl;
 	               					}
 	               				break;
 	           				case 2: // remove fscursorlist
 	              					for (int i = 0; i < 1000; ++i)
 	               					{
+	               						t = clock();
 	               						do{
 	               							x=rand%()1000;
 	               						}while (pos>listafsc);
+	               						t = clock() - t;
+  										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
+										cout<<endl;
+
 	               					}
 	               				break;
 	           				case 3:// get fscursorlist
 	               					for (int i = 0; i < 1000; ++i)
 	               					{
+	               						t = clock();
 	               						do{
 	               							x=rand%()1000;
 	               						}while (pos>listafsc);
+	               						t = clock() - t;
+  										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
+										cout<<endl;
 	               					}
 	               				break;
 	          				 case 4: // IndexOf fscursorlist
 	               					for (int i = 0; i < 1000; ++i)
 	               					{
+	               						t = clock();
 	               						do{
 	               							x=rand%()1000;
 	               						}while (pos>listafsc);
+	               						t = clock() - t;
+  										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
+										cout<<endl;
 	               					}
 	               				break;
 	           				case 5: //fisrt fscursorlist
