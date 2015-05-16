@@ -1,5 +1,5 @@
-exe:	main.o tdalist.o linkedlist.o integer.o fsarraylist.o fscursorlist.o object.o dllnode.o
-	g++ main.o tdalist.o linkedlist.o integer.o fsarraylist.o fscursorlist.o object.o dllnode.o -o exe
+exe:	main.o tdalist.o linkedlist.o integer.o fsarraylist.o fscursorlist.o 
+	g++ main.o tdalist.o linkedlist.o integer.o fsarraylist.o fscursorlist.o  -o exe
 
 main.o:	main.cpp tdalist.cpp linkedlist.cpp integer.cpp fsarraylist.cpp fscursorlist.cpp 
 	g++ -c main.cpp
