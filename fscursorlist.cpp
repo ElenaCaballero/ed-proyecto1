@@ -98,20 +98,34 @@ Object* FSCursorList::first()const{
 	}
 }
 Object* FSCursorList::last()const{
-
+	for (int i = 0; i < size; ++i)
+	{
+		if(rows[i].next == -1)
+			return rows[i].data;
+	}
 }
 void FSCursorList::reset(){
-
+	if (head)
+        delete head;
+    head = -1;
+    size = 0;
 }
 void FSCursorList::print()const{
-
+	for (int i = size-1; i >= 0; --i)
+	{
+		rows[i].data->print();
+	}
 }
 bool FSCursorList::isEmpty()const{
-
+	if (size == 0)
+		return true;
+	return false;
 }
 bool FSCursorList::isFull()const{
-
+	if(size == capacity)
+		return true;
+	return false;
 }
 int FSCursorList::getCapacity()const{
-
+	return capacity;
 }
