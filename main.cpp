@@ -16,15 +16,15 @@
 
 	int main(int argc, char *argv[])
 	{
-	    // En el caso de que quisieramos utilizar otra implementación
-	    // SÓLO se tendría que cambiar esta línea.
-	    TDAList* listafsa = new FSArrayList(15);
+	    
+	    TDAList* listafsa = new FSArrayList(1000);
 	    TDAList* listall = new LinkedList();
 	    TDAList* listafsc = new fscursorlist();
 	    Integer* intTemp;
 	    clock_t t;
+	    Object* val;
 	    int pos;
-	    unsigned int ran;
+	    int ran;
 	    srand (time(0));
 	    bool flag = true;
 	    while (flag)
@@ -68,7 +68,7 @@
 	               						}while (ran>listafsa->getSize());
 	               						
 	               						t = clock() - t;
-
+	               						val=listafsa->get(i);
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
 	               					}
@@ -82,7 +82,7 @@
 	               						}while (ran>listafsa->getSize());
 	               						intTemp = new Integer(i);
 	               						t = clock() - t;
-	               						listafsa->IndexOf(intTemp);
+	               						pos=listafsa->IndexOf(intTemp);
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
 										delete intTemp;
@@ -132,6 +132,7 @@
 	               							ran=rand()%1000;
 	               						}while (ran>listall->getSize());
 	               						t = clock() - t;
+	               						val=listall->get(i);
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
 	               					}
@@ -145,7 +146,7 @@
 	               						}while (ran>listall->getSize());
 	               						intTemp = new Integer(i);
 	               						t = clock() - t;
-	               						listall->IndexOf(intTemp);
+	               						pos=listall->IndexOf(intTemp);
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
 										delete intTemp;
@@ -196,6 +197,7 @@
 	               							ran=rand()%1000;
 	               						}while (ran>listafsc->getSize());
 	               						t = clock() - t;
+	               						val=listafsc->get(i);
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
 	               					}
@@ -209,7 +211,7 @@
 	               						}while (ran>listafsc->getSize());
 	               						intTemp = new Integer(i);
 	               						t = clock() - t;
-	               						listafsc->IndexOf(intTemp);
+	               						pos=listafsc->IndexOf(intTemp);
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
 										delete intTemp;
