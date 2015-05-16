@@ -27,6 +27,7 @@ public:
     virtual bool isEmpty()const;
     virtual bool isFull()const;
     virtual int getCapacity()const;
+    int avail()const;
 };
 
 #endif

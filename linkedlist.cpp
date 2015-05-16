@@ -85,7 +85,7 @@ int LinkedList::indexOf(Object* other)const {
 }
 // Consigue el elemento index de la lista, si index es una posición válida
 Object* LinkedList::get(unsigned index)const {
-    if (index < 0 || index >= size)
+    if (index >= size)
         return NULL;
     DLLNode* tmp = head;
     for (int i=0; i < index; i++)
@@ -104,7 +104,7 @@ Object* LinkedList::get(unsigned index)const {
 */
 bool LinkedList::erase(unsigned pos) {
     // Si es una posición Inválida
-    if (pos < 0 || pos >= size)
+    if (pos >= size)
         return false; // Indicar fracaso en la operación
     DLLNode* tmp;
     if (pos == 0){ // Desea Borrar la Cabeza
