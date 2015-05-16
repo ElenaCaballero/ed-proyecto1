@@ -4,8 +4,7 @@
 #include "tdalist.h"
 
 class FSCursorList : public TDAList{
-    struct Row
-    {
+    struct Row{
         int next, prev;
         Object* data;
     };
@@ -15,7 +14,7 @@ class FSCursorList : public TDAList{
 public:
     FSCursorList(int);
     virtual ~FSCursorList();
-    virtual bool insert(Object*, int) ;
+    virtual bool insert(Object*, int);
     virtual int indexOf(Object*)const;
     virtual Object* get(unsigned)const;
     virtual bool erase(unsigned);
