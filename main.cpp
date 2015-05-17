@@ -206,7 +206,7 @@ int menu2();
 	               						t = clock();
 	               						do{
 	               							ran=rand()%1000;
-	               						}while (ran>listafsc->getSize());
+	               						}while (ran <= listafsc->getSize());
 	               						
 	               						listafsc->insert( new Integer(i),ran);
 	               						t = clock() - t;
@@ -220,9 +220,10 @@ int menu2();
 	               						t = clock();
 	               						do{
 	               							ran=rand()%1000;
-	               						}while (ran>listafsc->getSize());
+	               						}while (ran <= listafsc->getSize());
 	               						
 	               						listafsc->erase(ran);
+
 	               						t = clock() - t;
   										printf ("It took me %f clicks (%f seconds).\n",(float)t,((float)t)/CLOCKS_PER_SEC);
 										cout<<endl;
