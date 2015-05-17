@@ -20,7 +20,7 @@ int menu2();
 	    
 	    TDAList* listafsa = new FSArrayList(1000);
 	    TDAList* listall = new LinkedList();
-	    TDAList* listafsc = new fscursorlist(1000);
+	    TDAList* listafsc = new FSCursorList(1000);
 	    Integer* intTemp;
 	    clock_t t;
 	    Object* val;
