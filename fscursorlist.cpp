@@ -40,6 +40,8 @@ bool FSCursorList::insert(Object* elem, int pos){
 		if(pos < size)
 			rows[rows[neo].next].prev = neo;
 	}
+	rows[neo].data = elem;
+	size++;
 	return true;
 }
 int FSCursorList::indexOf(Object* elem)const{
@@ -82,6 +84,7 @@ bool FSCursorList::erase(unsigned pos){
 		rows[rows[temp].prev].next = rows[temp].prev;
 		rows[rows[temp].next].prev = rows[temp].next;
 	}
+	size--;
 	return true;
 }
 int FSCursorList::prev(int pos) const{
