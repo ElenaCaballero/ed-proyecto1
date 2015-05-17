@@ -70,19 +70,18 @@ bool FSCursorList::erase(unsigned pos){
 		return false;
 	if (pos == size){
 		int temp = head;
-		for (int i = 0; i < pos -1; ++i)
+		for (int i = 0; i < pos - 1; ++i)
 		{
 			temp = rows[temp].next;
 		}
-		rows[pos].data = NULL;
+		rows[rows[temp].next].data = NULL;
 		rows[rows[temp].prev].next = -1;
 	}else{
 		int temp = head;
-		for (int i = 0; i < pos; ++i)
+		for (int i = 0; i < pos - 1 ; ++i)
 		{
 			temp = rows[temp].next;
 		}
-		rows[pos].data = NULL;
 		rows[rows[temp].prev].next = rows[temp].prev;
 		rows[rows[temp].next].prev = rows[temp].next;
 	}
