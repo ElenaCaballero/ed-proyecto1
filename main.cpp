@@ -117,7 +117,7 @@ int menu2();
 	        		}
 	               break;
 	           case 2: // Linkedlist
-	              	switch(menu2()){
+	              	switch(menu()){
 	           				case 1: // Insert Linkedlist
 	               					for (int i = 0; i < 1000; ++i)
 	               					{
@@ -199,7 +199,7 @@ int menu2();
 	       			 }
 	               	break;
 	           case 3:// fscursorlist
-	            	switch(menu2()) {
+	            	switch(menu()) {
 	           				case 1: // Insert fscursorlist
 	               					for (int i = 0; i < 1000; ++i)
 	               					{
