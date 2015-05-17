@@ -74,6 +74,7 @@ bool FSCursorList::erase(unsigned pos){
 		{
 			temp = rows[temp].next;
 		}
+		rows[pos].data = NULL;
 		rows[rows[temp].prev].next = -1;
 	}else{
 		int temp = head;
@@ -81,6 +82,7 @@ bool FSCursorList::erase(unsigned pos){
 		{
 			temp = rows[temp].next;
 		}
+		rows[pos].data = NULL;
 		rows[rows[temp].prev].next = rows[temp].prev;
 		rows[rows[temp].next].prev = rows[temp].next;
 	}
