@@ -84,6 +84,7 @@ bool FSCursorList::erase(unsigned pos){
 		}
 		rows[rows[temp].prev].next = rows[temp].prev;
 		rows[rows[temp].next].prev = rows[temp].next;
+		rows[temp].data = NULL;
 	}
 	size--;
 	return true;
